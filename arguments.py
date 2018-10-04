@@ -4,7 +4,7 @@ import json
 def arguments(argv):
     '''
         Expects arguments of the form:
-            ga.py message_file_location fitness_function_name [test help]
+            ga.py message_file_location fitness_function_name population_count generations [test help]
     '''
     config = {}
 
@@ -26,14 +26,12 @@ def arguments(argv):
     except ValueError:
         pass
 
-    not_enough_arguments_flag = len(argv)< 3
+    not_enough_arguments_flag = len(argv)< 5
     if config['help'] or not_enough_arguments_flag:
         if not_enough_arguments_flag:
             print("Not enough arguments provided")
         print_help_text()
         exit(0)
-
-
 
     config['message_file'] = argv[1]
     print("Message file location: '" + config['message_file'] +"'" )
