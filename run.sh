@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python ga.py messages.json ordered 10 3
+python ga.py messages.json ordered 5 3
