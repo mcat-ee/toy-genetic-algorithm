@@ -9,5 +9,5 @@ def load_messages_from_file(file_location):
 
 def import_libraries():
     strategies = {}
-    strategies[ordered.name] = { "objective_function": ordered.objective_function, "generate": ordered.generate}
+    strategies[ordered.name] = { "objective_function": ordered.objective_function, "generate": ordered.generate, "generate_from_best": ordered.generate_from_best}
     return strategies
