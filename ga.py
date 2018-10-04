@@ -13,8 +13,6 @@ def find_best_solution(solutions,objective_function):
 
     for solution in solutions:
         score = objective_function(solution)
-    #    print(solution)
-    #    print(score)
         print(str(solution['id']) + " - SCORE: " + str(score))
         print("")
         if score > best_solution['score']:
