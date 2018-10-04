@@ -13,3 +13,9 @@ This will run ga.py with a simple configuration:
 The format for running ga.py is as follows:
 
 `python ga.py message_file_location strategy_name population_size generation_count`
+
+If you're trying to learn about genetic algorithms, try implementing a new strategy by using the 'ordered' strategy as a template!
+
+For simplicity, this project only uses standard python library code.
+
+Licensing: public domain
