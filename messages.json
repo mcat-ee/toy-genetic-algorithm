@@ -3,7 +3,25 @@
         {
             "id": "1",
             "sender": "senderNode",
-            "content": "this is a test message",
+            "content": "this is a test message1",
+            "destination": "destinationNode"
+        },
+        {
+            "id": "2",
+            "sender": "senderNode",
+            "content": "this is a test message2",
+            "destination": "destinationNode"
+        },
+        {
+            "id": "3",
+            "sender": "senderNode",
+            "content": "this is a test message3",
+            "destination": "destinationNode"
+        },
+        {
+            "id": "4",
+            "sender": "senderNode",
+            "content": "this is a test message4",
             "destination": "destinationNode"
         }
     ]
