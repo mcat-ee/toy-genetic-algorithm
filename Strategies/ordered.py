@@ -5,7 +5,6 @@ name = "ordered"
 def objective_function(genome):
     score = 0
     for messageIndex, message in enumerate(genome['ordered_message_list']):
-        #print(messageIndex,message['id'])
         if str(messageIndex) == message['id']:
             score = score + 1
 
