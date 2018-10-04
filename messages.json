@@ -1,25 +1,25 @@
 {
     "message_list": [
         {
-            "id": "1",
+            "id": "0",
             "sender": "senderNode",
             "content": "this is a test message1",
             "destination": "destinationNode"
         },
         {
-            "id": "2",
+            "id": "1",
             "sender": "senderNode",
             "content": "this is a test message2",
             "destination": "destinationNode"
         },
         {
-            "id": "3",
+            "id": "2",
             "sender": "senderNode",
             "content": "this is a test message3",
             "destination": "destinationNode"
         },
         {
-            "id": "4",
+            "id": "3",
             "sender": "senderNode",
             "content": "this is a test message4",
             "destination": "destinationNode"
