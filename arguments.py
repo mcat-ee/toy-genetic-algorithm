@@ -35,6 +35,16 @@ def arguments(argv):
 
     config['message_file'] = argv[1]
     print("Message file location: '" + config['message_file'] +"'" )
+
+    config['strategy_name'] = argv[2]
+    print("Strategy nominated: '" + config['strategy_name'] + "'")
+
+    config['population_size'] = int(argv[3])
+    print("Population size chosen: '" + str(config['population_size']) + "'")
+
+    config['generation_count'] = int(argv[4])
+    print("Generation iterations chosen: '" + str(config['generation_count']) + "'")
+
     return config
 
 def print_help_text():
