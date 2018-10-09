@@ -19,13 +19,15 @@ def objective_function(genome):
 def generate_from_best(best_solution, population_size):
     #print(best_solution)
     population = []     #Population is created with the original best solution as it's founding member
-    population.append({"id": random.random(), "ordered_message_list": best_solution['solution_object']['ordered_message_list'][:]})
+    population.append({"id": best_solution['solution_object']['id'], "ordered_message_list": best_solution['solution_object']['ordered_message_list'][:]})
+    id = 1
     while(len(population) < population_size):
         new_solution = best_solution['solution_object']['ordered_message_list'][:]
         solution_length = range(len(new_solution))
         index1, index2 = random.sample(solution_length, 2)
         new_solution[index1], new_solution[index2] = new_solution[index2], new_solution[index1]
-        population.append({"id": random.random(), "ordered_message_list": new_solution})
+        population.append({"id": str(best_solution['solution_object']['id']) + "-"+str(id), "ordered_message_list": new_solution})
+        id = id + 1
     return population
 
 
